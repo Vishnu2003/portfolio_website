@@ -1,3 +1,8 @@
+@font-face {
+  font-family: StayClassy;
+  src: url(/assets/Fonts/Stay\ Classy.otf);
+}
+
 body {
   width: 100vw;
   height: 100vh;
@@ -7,4 +12,60 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+
+
+.homeText{
+  color: #FCD900;
+  position: absolute;
+  font-size: 52px;
+  font-family: StayClassy;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+
+.down-arrow {
+  color: white;
+  position: absolute;
+  width: 40px; height: 40px;
+  top: 88%; left: 50%;
+  margin: -20px 0 0 -20px;
+  display: flex;
+  justify-content: center; 
+  bottom: 10px; 
+  z-index: 2;
+}
+
+
+
+.down-arrow:after {
+  content: " ";
+  position: absolute;
+  top: 12px;
+  left: -10px;
+  width: 16px;
+  height: 16px;
+  border-bottom: 4px solid;
+  border-right: 4px solid;
+  border-radius: 4px;
+  transform: rotateZ(45deg);
+}
+
+@keyframes jumpInfinite {
+  0% {
+    margin-top: 0;
+  }
+  50% {
+    margin-top: 20px;
+  }
+  100% {
+    margin-top: 0;
+  }
+}
+
+.down-arrow {
+  animation: jumpInfinite 2.5s infinite;
 }
