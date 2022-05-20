@@ -29,7 +29,7 @@ body {
 
 .down-arrow {
   color: white;
-  position: absolute;
+  position: fixed;
   width: 40px; height: 40px;
   top: 88%; left: 50%;
   margin: -20px 0 0 -20px;
@@ -68,4 +68,9 @@ body {
 
 .down-arrow {
   animation: jumpInfinite 2.5s infinite;
+}
+
+.home{
+  position: absolute;
+  color: aliceblue;
 }

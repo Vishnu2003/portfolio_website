@@ -101,6 +101,19 @@ let clock = new THREE.Clock()
 const tick = () =>
 {
     
+    // if (window.DeviceOrientationEvent){
+    //     window.addEventListener('deviceorientation', 
+    //     function(eventData){
+    //         let tiltX = Math.round(eventData.gamma * 2)
+    //         let tiltY = Math.round(eventData.beta * 2)
+    //     handleOrientationEvent(tiltX,tiltY)}, false)
+    // }
+
+    // function handleOrientationEvent(tiltX, tiltY){
+    //     mouseX = tiltX
+    //     mouseY = tiltY
+    // }
+
     let deltaTime = clock.getDelta()
 
     // Update objects
